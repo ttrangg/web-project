@@ -1,14 +1,16 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "fashion";
-
-// Create connection
-$conn = mysql_connect($servername, $username, $password, $db);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+/**
+ * 
+ */
+class Database
+{
+	
+	private $con;
+	public function connect(){
+		$this->con = new Mysqli("localhost", "root", "", "fashion");
+		return $this->con;
+	}
 }
+
+?>

@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <?php include_once("./templates/top.php"); ?>
 <?php include_once("./templates/navbar.php"); ?>
 <div class="container-fluid">
@@ -26,7 +26,15 @@
             </tr>
           </thead>
           <tbody id="category_list">
-              
+            <!-- <tr>
+              <td>1</td>
+              <td>ABC</td>
+              <td>FDGR.JPG</td>
+              <td>122</td>
+              <td>eLECTRONCS</td>
+              <td>aPPLE</td>
+              <td><a class="btn btn-sm btn-info"></a><a class="btn btn-sm btn-danger">Delete</a></td>
+            </tr> -->
           </tbody>
         </table>
       </div>
@@ -52,7 +60,7 @@
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Category Name</label>
-		        		<input type="text" name="cat_title" class="form-control" placeholder="Enter Category Name">
+		        		<input type="text" name="cate_name" class="form-control" placeholder="Enter Brand Name">
 		        	</div>
         		</div>
         		<input type="hidden" name="add_category" value="1">
@@ -68,7 +76,6 @@
 </div>
 <!-- Modal -->
 
-
 <!--Edit category Modal -->
 <div class="modal fade" id="edit_category_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -83,10 +90,10 @@
         <form id="edit-category-form" enctype="multipart/form-data">
           <div class="row">
             <div class="col-12">
-              <input type="hidden" name="cat_id">
+              <input type="hidden" name="cate_id">
               <div class="form-group">
                 <label>Category Name</label>
-                <input type="text" name="e_cat_title" class="form-control" placeholder="Enter Category Name">
+                <input type="text" name="e_cate_name" class="form-control" placeholder="Enter Brand Name">
               </div>
             </div>
             <input type="hidden" name="edit_category" value="1">
