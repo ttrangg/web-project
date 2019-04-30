@@ -20,7 +20,7 @@
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>Id</th>
+              <th>#</th>
               <th>Name</th>
               <th>Action</th>
             </tr>
