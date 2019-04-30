@@ -5,6 +5,7 @@ $(document).ready(function(){
 	function getCategories(){
 		$.ajax({
 			url : '../admin/classes/Products.php',
+                    
 			method : 'POST',
 			data : {GET_CATEGORIES:1},
 			success : function(response){
