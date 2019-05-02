@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="product_images/icons/favicon.png"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -30,7 +30,7 @@
 		<div class="wrap-slick1 rs2-slick1">
 			<div class="slick1">
                             
-				<div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-07.jpg);" data-thumb="images/thumb-03.jpg" data-caption="Men’s Wear">
+				<div class="item-slick1 bg-overlay1" style="background-image: url(product_images/slide-07.jpg);" data-thumb="images/thumb-03.jpg" data-caption="Men’s Wear">
 					<div class="container h-full">
 						<div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-05.jpg);" data-thumb="images/thumb-01.jpg" data-caption="Women’s Wear">
+				<div class="item-slick1 bg-overlay1" style="background-image: url(product_images/slide-05.jpg);" data-thumb="images/thumb-01.jpg" data-caption="Women’s Wear">
 					<div class="container h-full">
 						<div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -77,7 +77,7 @@
 					</div>
 				</div>
 
-				<div class="item-slick1 bg-overlay1" style="background-image: url(images/slide-06.jpg);" data-thumb="images/thumb-02.jpg" data-caption="Men’s Wear">
+				<div class="item-slick1 bg-overlay1" style="background-image: url(product_images/slide-06.jpg);" data-thumb="images/thumb-02.jpg" data-caption="Men’s Wear">
 					<div class="container h-full">
 						<div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
 							<div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
@@ -111,12 +111,12 @@
         
         <div style="padding-left: 17%;padding-right: 17%;padding-top:20px;padding-bottom:20px;width: 100%;
             position: relative">
-            <img src= images/Enni_banner.jpg>
+            <img src= product_images/Enni_banner.jpg>
         </div>    
     </div>
         <div style="background-color: lightcyan">
         <div style="margin-left: auto;padding-right: 10%;padding-left: 10%;padding-top:20px;padding-bottom:20px;width: 100%;">
-            <img src= images/BANNER.jpg>
+            <img src= product_images/BANNER.jpg>
         </div>
     </div>
         
@@ -131,7 +131,7 @@
 		<div class="container">
 			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
 				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
-					<img src="images/icons/icon-close.png" alt="CLOSE">
+					<img src="product_images/icons/icon-close.png" alt="CLOSE">
 				</button>
 
 				<div class="row">
@@ -144,9 +144,9 @@
 								<div class="slick3 gallery-lb">
 									<div class="item-slick3" data-thumb="images/product-detail-01.jpg">
 										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
+											<img src="product_images/product-detail-01.jpg" alt="IMG-PRODUCT">
 
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="product_images/product-detail-01.jpg">
 												<i class="fa fa-expand"></i>
 											</a>
 										</div>
@@ -154,9 +154,9 @@
 
 									<div class="item-slick3" data-thumb="images/product-detail-02.jpg">
 										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
+											<img src="product_images/product-detail-02.jpg" alt="IMG-PRODUCT">
 
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="product_images/product-detail-02.jpg">
 												<i class="fa fa-expand"></i>
 											</a>
 										</div>
@@ -164,9 +164,9 @@
 
 									<div class="item-slick3" data-thumb="images/product-detail-03.jpg">
 										<div class="wrap-pic-w pos-relative">
-											<img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+											<img src="product_images/product-detail-03.jpg" alt="IMG-PRODUCT">
 
-											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
+											<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="product_images/product-detail-03.jpg">
 												<i class="fa fa-expand"></i>
 											</a>
 										</div>

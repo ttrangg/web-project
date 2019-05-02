@@ -1,3 +1,4 @@
+
 <?php session_start(); ?>
 <?php include_once("./templates/top.php"); ?>
 <?php include_once("./templates/navbar.php"); ?>
@@ -19,26 +20,16 @@
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th>#</th>
+              <th>Id</th>
               <th>Name</th>
               <th>Image</th>
               <th>Price</th>
-              <th>Quantity</th>
+              <th>Description</th>
               <th>Category</th>
-              <th>Brand</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody id="product_list">
-            <!-- <tr>
-              <td>1</td>
-              <td>ABC</td>
-              <td>FDGR.JPG</td>
-              <td>122</td>
-              <td>eLECTRONCS</td>
-              <td>aPPLE</td>
-              <td><a class="btn btn-sm btn-info"></a><a class="btn btn-sm btn-danger">Delete</a></td>
-            </tr> -->
           </tbody>
         </table>
       </div>
@@ -64,21 +55,14 @@
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Product Name</label>
-		        		<input type="text" name="product_name" class="form-control" placeholder="Enter Product Name">
+		        		<input type="text" name="pro_name" class="form-control" placeholder="Enter Product Name">
 		        	</div>
         		</div>
-        		<div class="col-12">
-        			<div class="form-group">
-		        		<label>Brand Name</label>
-		        		<select class="form-control brand_list" name="brand_id">
-		        			<option value="">Select Brand</option>
-		        		</select>
-		        	</div>
-        		</div>
+        		
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Category Name</label>
-		        		<select class="form-control category_list" name="category_id">
+		        		<select class="form-control category_list" name="cate_id">
 		        			<option value="">Select Category</option>
 		        		</select>
 		        	</div>
@@ -86,31 +70,21 @@
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Product Description</label>
-		        		<textarea class="form-control" name="product_desc" placeholder="Enter product desc"></textarea>
+		        		<textarea class="form-control" name="description" placeholder="Enter Product Description"></textarea>
 		        	</div>
         		</div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Qty</label>
-                <input type="number" name="product_qty" class="form-control" placeholder="Enter Product Quantity">
-              </div>
-            </div>
+            
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Product Price</label>
-		        		<input type="number" name="product_price" class="form-control" placeholder="Enter Product Price">
+		        		<input type="number" name="price" class="form-control" placeholder="Enter Product Price">
 		        	</div>
         		</div>
-        		<div class="col-12">
-        			<div class="form-group">
-		        		<label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
-		        		<input type="text" name="product_keywords" class="form-control" placeholder="Enter Product Keywords">
-		        	</div>
-        		</div>
+        		
         		<div class="col-12">
         			<div class="form-group">
 		        		<label>Product Image <small>(format: jpg, jpeg, png)</small></label>
-		        		<input type="file" name="product_image" class="form-control">
+		        		<input type="file" name="image" class="form-control">
 		        	</div>
         		</div>
         		<input type="hidden" name="add_product" value="1">
@@ -142,21 +116,13 @@
             <div class="col-12">
               <div class="form-group">
                 <label>Product Name</label>
-                <input type="text" name="e_product_name" class="form-control" placeholder="Enter Product Name">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Brand Name</label>
-                <select class="form-control brand_list" name="e_brand_id">
-                  <option value="">Select Brand</option>
-                </select>
+                <input type="text" name="e_pro_name" class="form-control" placeholder="Enter Product Name">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
                 <label>Category Name</label>
-                <select class="form-control category_list" name="e_category_id">
+                <select class="form-control category_list" name="e_cate_id">
                   <option value="">Select Category</option>
                 </select>
               </div>
@@ -164,31 +130,19 @@
             <div class="col-12">
               <div class="form-group">
                 <label>Product Description</label>
-                <textarea class="form-control" name="e_product_desc" placeholder="Enter product desc"></textarea>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Qty</label>
-                <input type="number" name="e_product_qty" class="form-control" placeholder="Enter Product Quantity">
+                <textarea class="form-control" name="e_description" placeholder="Enter Product Description"></textarea>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
                 <label>Product Price</label>
-                <input type="number" name="e_product_price" class="form-control" placeholder="Enter Product Price">
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-group">
-                <label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
-                <input type="text" name="e_product_keywords" class="form-control" placeholder="Enter Product Keywords">
+                <input type="number" name="e_price" class="form-control" placeholder="Enter Product Price">
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
                 <label>Product Image <small>(format: jpg, jpeg, png)</small></label>
-                <input type="file" name="e_product_image" class="form-control">
+                <input type="file" name="e_image" class="form-control">
                 <img src="../product_images/1.0x0.jpg" class="img-fluid" width="50">
               </div>
             </div>

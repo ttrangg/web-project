@@ -16,8 +16,8 @@ $(document).ready(function(){
 				$.each(resp.message, function(index, value){
 					brandHTML += '<tr>'+
 									'<td></td>'+
-									'<td>'+ value.cat_title +'</td>'+
-									'<td><a class="btn btn-sm btn-info edit-category"><span style="display:none;">'+JSON.stringify(value)+'</span><i class="fas fa-pencil-alt"></i></a>&nbsp;<a cid="'+value.cat_id+'" class="btn btn-sm btn-danger delete-category"><i class="fas fa-trash-alt"></i></a></td>'+
+									'<td>'+ value.cate_name +'</td>'+
+									'<td><a class="btn btn-sm btn-info edit-category"><span style="display:none;">'+JSON.stringify(value)+'</span><i class="fas fa-pencil-alt"></i></a>&nbsp;<a cid="'+value.cate_id+'" class="btn btn-sm btn-danger delete-category"><i class="fas fa-trash-alt"></i></a></td>'+
 								'</tr>';
 				});
 
@@ -51,8 +51,8 @@ $(document).ready(function(){
 	$(document.body).on("click", ".edit-category", function(){
 
 		var cat = $.parseJSON($.trim($(this).children("span").html()));
-		$("input[name='e_cat_title']").val(cat.cat_title);
-		$("input[name='cat_id']").val(cat.cat_id);
+		$("input[name='e_cate_name']").val(cat.cate_name);
+		$("input[name='cate_id']").val(cat.cate_id);
 
 		$("#edit_category_modal").modal('show');
 
