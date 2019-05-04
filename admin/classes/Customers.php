@@ -26,6 +26,21 @@ class Customers
 		}
 		return ['status'=> 303, 'message'=> 'no customers data'];
 	}
+        
+        public function deleteCustomer($cus_id = null){
+		if ($cus_id != null) {
+			$q = $this->con->query("DELETE FROM `customers` WHERE cus_id = '$cus_id'");
+			if ($q) {
+				return ['status'=> 202, 'message'=> 'Customer removed from stocks'];
+			}else{
+				return ['status'=> 202, 'message'=> 'Failed to run query'];
+			}
+			
+		}else{
+			return ['status'=> 303, 'message'=>'Invalid customer id'];
+		}
+
+	}
 
 }
 
@@ -41,6 +56,23 @@ if (isset($_POST["GET_CUSTOMERS"])) {
 		exit();
 	
 }
+
+if (isset($_POST['DELETE_CUSTOMERS'])) {                    
+
+		if(!empty($_POST['cus_id'])){	
+    $p = new Customers();
+
+			echo json_encode($p->deleteCustomer($_POST['cus_id']));
+			exit();
+		}else{
+			echo json_encode(['status'=> 303, 'message'=> 'Invalid cat id']);
+			exit();
+		}
+	
+
+
+}
+
 
 // if (isset($_POST["GET_CUSTOMER_ORDERS"])) {
 // 		$c = new Customers();

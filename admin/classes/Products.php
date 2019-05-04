@@ -105,7 +105,7 @@ class Products
 			if ($file['size'] > (1024 * 2)) {
 				
 				$uniqueImageName = time()."_".$file['name'];
-				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/KhanStore/product_images/".$uniqueImageName)) {
+				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/web-project/product_images/".$uniqueImageName)) {
 					
 					$q = $this->con->query("UPDATE `products` SET 
 										`cate_id` = '$cate_id',
