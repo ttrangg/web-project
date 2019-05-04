@@ -8,7 +8,7 @@
 					
 					<!-- Logo desktop -->		
 					<a href="index.php" class="logo">
-						<img src="product_images/icons/logo-01.png" alt="IMG-LOGO">
+						<img src="image/icons/logo-01.png" alt="IMG-LOGO">
 					</a>
 
 					<!-- Menu desktop -->
@@ -23,9 +23,9 @@
 								<a href="product.php">Shop</a>
 							</li>
 
-							<li>
+<!--							<li>
 								<a href="shoping-cart.php">Cart</a>
-							</li>
+							</li>-->
 
 
 							<li>
@@ -47,15 +47,9 @@
 		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->		
 			<div class="logo-mobile">
-				<a href="index.php"><img src="product_images/icons/logo-01.png" alt="IMG-LOGO"></a>
+				<a href="index.php"><img src="image/icons/logo-01.png" alt="IMG-LOGO"></a>
 			</div>
 
-			<!-- Icon header -->
-			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
-				<div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-					<i class="zmdi zmdi-search"></i>
-				</div>
-			</div>
 
 			<!-- Button show menu -->
 			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
@@ -83,9 +77,9 @@
 					<a href="product.php">Shop</a>
 				</li>
 
-				<li>
+<!--				<li>
 					<a href="shoping-cart.php"a>Features</a>
-				</li>
+				</li>-->
 
 				<li>
 					<a href="blog.php">Blog</a>
@@ -105,7 +99,7 @@
 		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
 			<div class="container-search-header">
 				<button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-					<img src="product_images/icons/icon-close2.png" alt="CLOSE">
+					<img src="image/icons/icon-close2.png" alt="CLOSE">
 				</button>
 
 				<form class="wrap-search-header flex-w p-l-15">
