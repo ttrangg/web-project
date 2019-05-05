@@ -20,7 +20,7 @@
 							</li>
 
 							<li>
-								<a href="product.php">Shop</a>
+								<a href="products_all.php">Shop</a>
 							</li>
 
 <!--							<li>

@@ -46,7 +46,7 @@ class Products
 								$description,
 								$price,
 								$file){
-
+                
 
 		$fileName = $file['name'];
 		$fileNameAr= explode(".", $fileName);
