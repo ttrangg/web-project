@@ -52,11 +52,12 @@
             </button>
         </a>
     </div>
-
+<!--    <form method="get" action="search_resultl.php">
     <div class="flex-w flex-c-m m-tb-10">
         <button><i class="zmdi zmdi-search"></i></button>
-        <input class="search_box "type="text" name="search" placeholder="Search">
+        <input class="search_box " type="text" name="search" placeholder="Search">
+        <input type="submit" value="Search">
     </div>
-
+    </form>-->
     
 </div>
