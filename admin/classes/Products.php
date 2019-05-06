@@ -46,7 +46,7 @@ class Products
 								$description,
 								$price,
 								$file){
-                
+
 
 		$fileName = $file['name'];
 		$fileNameAr= explode(".", $fileName);
@@ -55,12 +55,10 @@ class Products
 
 		if ($ext == "jpg" || $ext == "jpeg" || $ext == "png") {
 			
-			//print_r($file['size']);
-
 			if ($file['size'] > (1024 * 2)) {
 				
 				$uniqueImageName = time()."_".$file['name'];
-				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/admin/product_images/".$uniqueImageName)) {
+				if (move_uploaded_file($file['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/web-project/product_images/".$uniqueImageName)) {
 					
 					$q = $this->con->query("INSERT INTO `products`(`pro_name`, `cate_id`, `description`, `price`, `image`) VALUES ('$pro_name', '$cate_id', '$description', '$price', '$uniqueImageName')");
 
@@ -112,13 +110,13 @@ class Products
 										`pro_name` = '$pro_name',
 										`price` = '$price', 
 										`description` = '$description', 
-										`image` = '$uniqueImageName',
+										`image` = '$uniqueImageName'
 										WHERE pro_id = '$pid'");
 
 					if ($q) {
 						return ['status'=> 202, 'message'=> 'Product Modified Successfully..!'];
 					}else{
-						return ['status'=> 303, 'message'=> 'Failed to run query'];
+						return ['status'=> 303, 'message'=> $this->con->error];
 					}
 
 				}else{
@@ -146,7 +144,7 @@ class Products
 										`cate_id` = '$cate_id',
 										`pro_name` = '$pro_name',
 										`price` = '$price', 
-										`description` = '$description',
+										`description` = '$description'
 										WHERE pro_id = '$pid'");
 
 			if ($q) {

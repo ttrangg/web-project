@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 				$.each(resp.message, function(index, value){
 					brandHTML += '<tr>'+
-									'<td></td>'+
+									'<td> '+ value.cate_id +' </td>'+
 									'<td>'+ value.cate_name +'</td>'+
 									'<td><a class="btn btn-sm btn-info edit-category"><span style="display:none;">'+JSON.stringify(value)+'</span><i class="fas fa-pencil-alt"></i></a>&nbsp;<a cid="'+value.cate_id+'" class="btn btn-sm btn-danger delete-category"><i class="fas fa-trash-alt"></i></a></td>'+
 								'</tr>';

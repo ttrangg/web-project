@@ -62,15 +62,14 @@ $(document).ready(function () {
             cache: false,
             processData: false,
             success: function (response) {
-                console.log(response);
-                var resp = $.parseJSON(response);
-                if (resp.status == 202) {
+                if (response.status == 202) {
                     $("#add-product-form").trigger("reset");
                     $("#add_product_modal").modal('hide');
                     getProducts();
-                } else if (resp.status == 303) {
-                    alert(resp.message);
                 }
+            },
+            error: function(error) {
+                console.log(error);
             }
 
         });
